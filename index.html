@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios ejercicio</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+    <body>
+     <div class="container">
+
+    <h3>Regístrate</h3>
+   
+        <form>
+            <fieldset>
+                <legend>El Club Viejuner</legend>
+        
+         <div>
+             <label for="nombre">Tu nombre</label>
+             <input type="text" id="nombre" class="box" placeholder="Nombre" required>
+
+                <label for="apellidos">Apellidos</label>
+                <input type="text" id="apellidos" class="box" placeholder="Apellidos" required>
+
+                <label for="edad">Tu edad</label>
+                <input type="number" id="edad" class="box" placeholder="Introduce tu edad"
+                pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+        </div>
+
+        <div>
+            <h3>Sexo</h3>
+            <br>
+                <input type="radio" value="femenino" name="sexo">Femenino</input>
+            </br>
+                <input type="radio" value="masculino" name="sexo">Masculino</input>
+            <br>
+                <input type="radio" value="no especifica" name="sexo">No especifica</input>
+            </br>
+            <br>
+                <input type="checkbox" value="name">Me siento viejuner</input>
+            </br>
+            </div>
+
+        <br>
+            <label for="Escribe algo sobre ti" value="textarea"></label>
+            
+            <textarea name="textarea" rows="10" cols="50" placeholder="Escribe algo sobre ti" required></textarea>
+        </br>
+
+        <header>
+        <h1>Tus circunstancias</h1>
+        </header>
+
+        <br>
+            <label for="email">Introduce tu email</label>
+            <input type="text" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" title="email no válido" 
+                    older="Introduce tu email" placeholder="Introduce tu email" required>
+            <label for="teléfono">Introduce tu teléfono</label>
+            <input type="tel" pattern="[0-9]{9}" title="Teléfono no válido" 
+            older="Introduce tu teléfono" placeholder="Introduce tu teléfono" required>
+                       
+        </br>
+
+        <br>
+        
+            <input type="submit" value="Enviar este formulario" />
+            <input type="reset" value="Reset">
+        </br>
+        
+            </fieldset>  
+        </form>  
+        </div>
+
+        
+
+        
+            <form action="">
+                <fieldset>
+                    <legend> Formulario por si te han robado la bicicleta</legend>
+                    <label for="Cuándo te robaron la bicicleta">¿Cuándo te robaron la bicicleta?</label>
+                    <input type="date" id="fecha" name="fecha"></input>
+
+                    <label for="hora">¿A qué hora sucedió?></label>
+                    <input type="time" id="color" name="fecha"><input>
+
+                    <label for="color">Color de la bicicleta</label>
+                    <input type="color" id="color" name="color" paceholder="color"></input>
+
+                    <label for="range">¿Cuánto cuesta la bicicleta?></label>
+                    <input type="range" list="tickmarks">
+
+                        <datalist id="tickmarks">
+                            <option value="0" label="0">
+                            <option value="10">
+                            <option value="20">
+                            <option value="30">
+                            <option value="40">
+                            <option value="50">
+                            <option value="60">
+                            <option value="70">
+                            <option value="80">
+                            <option value="90">
+                            <option value="100">
+                        </datalist>
+
+                <h2>Modelo de la bicicleta</h2>
+
+                        <br>
+                    <label for="de paseo">De paseo</label>
+                    <select name="de paseo">
+                        <option value="value1">Señorial</option>
+                        <option value="value2">Antiplebeyos</option>
+                        <option value="value3">Por encima del hombro</option>
+                    </select>
+                        </br>
+
+                        <br>
+                    <label for="de montaña">De montaña</label>
+                    <select name="de montaña">
+                        <option value="value1">Gamusinos</option>
+                        <option value="value2">Hueleflores Premium</option>
+                        <option value="value3">Fango lover</option>
+                    </select>
+                        </br>
+
+                        <br>
+                    <label for="de carreras">De carreras</label>
+                    <select name="de carreras">
+                        <option value="value1">Metro y medio</option>
+                        <option value="value2">15 de la tarde (Fluorescente edition)</option>
+                        <option value="value3">Grupitors</option>
+                        </select>
+                        </br>
+                    
+                <h3>Accesorios</h3>
+                       
+                    <h4>¿Qué accesorios llevaba tu bicicleta?</h4>
+
+                        <select name="cars" id="cars" multiple>
+                            <option value="ruedines">Ruedines</option>
+                            <option value="pegatinas">Pegatinas</option>
+                            <option value="cestita">Cestita</option>
+                            <option value="bomba de aire">Bomba de aire</option>
+                            <option value="timbre">Timbre</option>
+                            <option value="foco">Foco</option>
+                        </select>
+                
+                <h3>Marca</h3>
+                    <select name="combo" multiple>
+                        <optgroup>
+                            <option value="specialized" label="Specialized"> </option>
+                            <option value="trek" label="Trek"> </option>
+                            <option value="merida" label="Mérida"> </option>
+                            <option value="scott" label="Scott"> </option>
+                            <option value="giant" label="Giant"> </option>
+                            <option value="cube" label="Cube"> </option>
+                            <option value="lapierre" label="Lapierre"> </option>
+                            <option value="orbea" label="Orbea"> </option>
+                            <option value="cannondale" label="Cannondale"> </option>
+                            <option value="bmc" label="BMC"> </option>
+                            <option value="canyno" label="Canyon"> </option>
+                            <option value="look" label="Look"> </option>
+                            <option value="protek" label="Protek"> </option>
+                            <option value="megamo" label="Megamo"> </option>
+                            <option value="pinarello" label="Pinarello"> </option>
+                            <option value="bianchi" label="Bianchi"> </option>
+                            <option value="bh" label="BH"> </option>
+                            <option value="fator" label="Factor"> </option>
+                            <option value="ghost" label="Ghost"> </option>
+                            <option value="cervelo" label="Cervelo"> </option>
+                            <option value="argon" label="Argon"> </option>
+
+                        </optgroup>
+                    </select>
+
+                <br>
+                    <input type="submit" value="Enviar este formulario" />
+                    <input type="reset" value="Reset">
+                </br>
+
+                </fieldset>
+            </form>
+        
+</body>
+</html>
